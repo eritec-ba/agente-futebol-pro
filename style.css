@@ -1,57 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+  background: linear-gradient(135deg, #0f172a, #1e2937);
   color: #e2e8f0;
   min-height: 100vh;
   padding: 20px;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   background: rgba(30, 41, 55, 0.95);
   border-radius: 20px;
-  padding: 40px 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 h1 {
   text-align: center;
-  font-size: 2.8rem;
-  margin-bottom: 8px;
   color: #22d3ee;
+  margin-bottom: 8px;
 }
 
 .subtitle {
   text-align: center;
   color: #94a3b8;
-  margin-bottom: 40px;
-  font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 
 .form {
   display: flex;
   gap: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 input {
   flex: 1;
-  min-width: 280px;
+  min-width: 260px;
   padding: 16px;
   border: none;
   border-radius: 12px;
   background: #334155;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 button {
@@ -61,22 +55,41 @@ button {
   border: none;
   border-radius: 12px;
   font-weight: bold;
-  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.3s;
+  font-size: 1.1rem;
 }
 
-button:hover {
-  background: #67e8f9;
-  transform: translateY(-2px);
+button:hover { 
+  background: #67e8f9; 
+  transform: translateY(-2px); 
 }
 
 #resultado {
-  background: #1e2937;
-  padding: 25px;
-  border-radius: 16px;
   margin-top: 20px;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  font-size: 1.05rem;
+  padding: 20px;
+  background: #1e2937;
+  border-radius: 16px;
+  line-height: 1.7;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: #1e2937;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+}
+
+th {
+  background: #334155;
+  color: #67e8f9;
+}
+
+.hidden { display: none; }
+
+h2, h3 { color: #67e8f9; margin: 20px 0 10px 0; }

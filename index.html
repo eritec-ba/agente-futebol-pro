@@ -9,16 +9,16 @@
 <body>
   <div class="container">
     <h1>⚽ Agente de Análise Esportiva</h1>
-    <p class="subtitle">Análise das últimas 10 partidas + Confrontos Diretos</p>
+    <p class="subtitle">Análise profissional das últimas 10 partidas + Avaliação de chances</p>
 
     <div class="form">
-      <input type="text" id="timeCasa" placeholder="Time da Casa (ex: Flamengo)" required>
-      <input type="text" id="timeFora" placeholder="Time de Fora (ex: Palmeiras)" required>
+      <input type="text" id="timeCasa" placeholder="Time da Casa (ex: Flamengo)" />
+      <input type="text" id="timeFora" placeholder="Time de Fora (ex: Palmeiras)" />
       <button onclick="analisarPartida()">🔍 Analisar Partida</button>
     </div>
 
+    <div id="loading" class="hidden">🔄 Buscando dados e analisando...</div>
     <div id="resultado"></div>
-    <div id="historico"></div>
   </div>
 
   <script src="script.js"></script>
